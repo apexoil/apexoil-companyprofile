@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Oil Company Inc. | Global Authority</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; background: #050505; color: #ffffff; line-height: 1.6; }
+        
+        nav { position: fixed; top: 0; width: 100%; background: #000; z-index: 1000; padding: 15px 0; border-bottom: 2px solid #FFD700; }
+        .nav-container { max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .nav-links a { color: #fff; text-decoration: none; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; margin-left: 15px; }
+
+        .hero { 
+            height: 50vh; 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/images/refinery.jpg') center/cover no-repeat;
+            display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 60px;
+        }
+        .straight-name { font-size: 2.2rem; color: #FFD700; letter-spacing: 3px; font-weight: 900; text-transform: uppercase; border-bottom: 3px solid #FFD700; padding: 10px; }
+
+        .ops-section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+        .ops-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .ops-card { background: #0a0a0a; border: 1px solid #222; border-radius: 8px; overflow: hidden; }
+        .ops-card img { width: 100%; height: 250px; object-fit: cover; border-bottom: 2px solid #FFD700; }
+        .ops-content { padding: 25px; }
+        .ops-content h3 { color: #FFD700; margin-bottom: 10px; font-size: 1.4rem; }
+        .ops-content p { color: #bbb; font-size: 0.95rem; text-align: justify; }
+
+        .contact-section { padding: 80px 20px; background: #0a0a0a; }
+        .contact-box { max-width: 500px; margin: auto; background: #111; padding: 30px; border-radius: 10px; border: 1px solid #FFD700; }
+        input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; background: #222; border: 1px solid #444; color: white; border-radius: 4px; }
+        .btn { width: 100%; padding: 15px; background: #FFD700; color: #000; border: none; font-weight: bold; cursor: pointer; text-transform: uppercase; }
+
+        .cert-section { padding: 40px 20px; background: #000; display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; max-width: 1100px; margin: auto; text-align: center; }
+        .cert-box { border: 1px solid #333; padding: 15px; font-size: 0.8rem; color: #888; }
+        .cert-box b { color: #FFD700; display: block; }
+
+        footer { text-align: center; padding: 40px; border-top: 1px solid #222; background: #000; }
+        .footer-email { color: #FFD700; text-decoration: none; font-weight: bold; font-size: 1.1rem; display: block; margin-top: 10px; }
+
+        @media (max-width: 600px) { .straight-name { font-size: 1.4rem; } .cert-section { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div style="color:#FFD700; font-weight:bold;">APEX OIL</div>
+            <div class="nav-links"><a href="#ops">Operations</a> <a href="#contact">Contact</a></div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1 class="straight-name">Apex Oil Company Inc.</h1>
+    </header>
+
+    <section id="ops" class="ops-section">
+        <div class="ops-grid">
+            <div class="ops-card">
+                <img src="images/images/refinery.jpg" alt="Refinery">
+                <div class="ops-content">
+                    <h3>Refinery Excellence</h3>
+                    <p>Apex Oil Company operates at the pinnacle of industrial refining. Our facilities utilize complex fractional distillation to produce high-grade fuels that set global benchmarks for purity and performance.</p>
+                </div>
+            </div>
+            <div class="ops-card">
+                <img src="images/images/oil-tanker.jpg" alt="Tanker">
+                <div class="ops-content">
+                    <h3>Global Logistics</h3>
+                    <p>Our fleet of tankers and pipeline systems ensure the seamless flow of energy across five continents. We maintain a 99.9% on-time delivery record for our global wholesale partners.</p>
+                </div>
+            </div>
+            <div class="ops-card">
+                <img src="images/images/trading-floor.jpg" alt="Trading">
+                <div class="ops-content">
+                    <h3>Energy Trading</h3>
+                    <p>Our 24/7 trading desk leverages proprietary models to navigate volatile markets, securing price stability and long-term energy security for our worldwide client base.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-box">
+            <h2 style="text-align:center; color:#FFD700; margin-bottom:20px;">Contact Our Team</h2>
+            <form action="https://formsubmit.co/shekinahpriest@gmail.com" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Corporate Email" required>
+                <textarea name="message" rows="4" placeholder="Inquiry Details" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="cert-section">
+        <div class="cert-box"><b>ISO 14001</b> Environmental Management</div>
+        <div class="cert-box"><b>API Standard</b> American Petroleum Institute</div>
+        <div class="cert-box"><b>ISCC Global</b> Sustainability Certified</div>
+        <div class="cert-box"><b>OHSAS 18001</b> Safety Verified</div>
+    </section>
+
+    <footer>
+        <p style="color:#666;">Official Inquiry Channel:</p>
+        <a href="mailto:shekinahpriest@gmail.com" class="footer-email">shekinahpriest@gmail.com</a>
+        <p style="font-size:0.7rem; color:#444; margin-top:20px;">&copy; 2026 Apex Oil Company Inc. | St. Louis, Missouri</p>
+    </footer>
+
+</body>
+</html>
