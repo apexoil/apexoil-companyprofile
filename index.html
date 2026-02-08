@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Oil Company Inc.</title>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: Georgia, serif;
+    background: #050505;
+    color: #ffffff;
+    line-height: 1.7;
+}
+
+/* NAV */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000;
+    border-bottom: 2px solid #FFD700;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: #FFD700;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+/* HERO */
+.hero {
+    height: 75vh;
+    margin-top: 70px;
+    background:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.55)),
+        url("images/images/refinery.jpg") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-inner {
+    background: rgba(0,0,0,0.55);
+    border: 2px solid #FFD700;
+    padding: 30px 35px;
+}
+
+.hero-inner h1 {
+    color: #FFD700;
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* SECTIONS */
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.section h2 {
+    color: #FFD700;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section p {
+    color: #bbb;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* OPS CARDS */
+.ops-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.ops-card {
+    background: #0a0a0a;
+    border: 1px solid #222;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ops-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-bottom: 2px solid #FFD700;
+}
+
+.ops-content {
+    padding: 25px;
+}
+
+.ops-content h3 {
+    color: #FFD700;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.ops-content p {
+    color: #bbb;
+    font-size: 0.95rem;
+}
+
+/* CONTACT */
+.contact-section {
+    background: #0a0a0a;
+    padding: 80px 20px;
+}
+
+.contact-box {
+    max-width: 500px;
+    margin: auto;
+    background: #111;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid #FFD700;
+}
+
+.contact-box h2 {
+    text-align: center;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #222;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: #FFD700;
+    color: #000;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    border-top: 1px solid #222;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.footer-email {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer-note {
+    font-size: 0.75rem;
+    color: #444;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .hero-inner h1 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-container">
+        <div class="nav-title">APEX OIL</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#operations">Operations</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="hero-inner">
+        <h1>Apex Oil Company Inc.</h1>
+    </div>
+</header>
+
+<section id="about" class="section">
+    <h2>Company Overview</h2>
+    <p>
+        Apex Oil Company Inc. is a long-established participant in the United States petroleum sector, engaged in the wholesale distribution, storage, and transportation of refined petroleum products. Founded in 1932, the company has developed a reputation for operational consistency, logistical capability, and long-term industry presence.
+    </p>
+    <p>
+        With a primary focus on asphalt, diesel, and gasoline, Apex Oil supports commercial, industrial, and infrastructure-driven markets through reliable supply channels and integrated logistics solutions.
+    </p>
+
+    <h2>History & Foundation</h2>
+    <p>
+        Established in 1932, Apex Oil Company Inc. has evolved alongside the modern energy industry. Over decades of operation, the company has adapted to changes in market demand, regulatory frameworks, and transportation technologies while maintaining a focus on wholesale petroleum distribution.
+    </p>
+
+    <h2>Headquarters</h2>
+    <p>
+        8235 Forsyth Blvd, Suite 900<br>
+        St. Louis, Missouri 63105<br>
+        United States
+    </p>
+</section>
+
+<section id="operations" class="section">
+    <h2>Core Operations</h2>
+
+    <div class="ops-grid">
+        <div class="ops-card">
+            <img src="images/images/pipeline.jpg" alt="Pipeline Operations">
+            <div class="ops-content">
+                <h3>Pipeline & Storage</h3>
+                <p>
+                    The company supports petroleum storage and pipeline-linked distribution systems that enable efficient movement of refined products across regional markets.
+                </p>
+            </div>
+        </div>
+
+        <div class="ops-card">
+            <img src="images/images/oil-tanker.jpg" alt="Marine Logistics">
+            <div class="ops-content">
+                <h3>Marine & Ground Transport</h3>
+                <p>
+                    Apex Oil utilizes coordinated marine and ground transportation networks to facilitate bulk delivery of asphalt, diesel, and gasoline to wholesale customers.
+                </p>
+            </div>
+        </div>
+
+        <div class="ops-card">
+            <img src="images/images/trading-floor.jpg" alt="Wholesale Distribution">
+            <div class="ops-content">
+                <h3>Wholesale Distribution</h3>
+                <p>
+                    Through structured supply agreements, the company distributes refined petroleum products to commercial buyers, infrastructure projects, and industrial partners.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="contact-box">
+        <h2>Contact Our Team</h2>
+        <form action="https://formsubmit.co/shekinahpriest@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <textarea name="message" rows="4" placeholder="Inquiry Details" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>Official Contact</p>
+    <a href="mailto:shekinahpriest@gmail.com" class="footer-email">
+        shekinahpriest@gmail.com
+    </a>
+    <p class="footer-note">
+        © 2026 Apex Oil Company Inc. | Corporate Website Demo
+    </p>
+</footer>
+
+</body>
+</html>
