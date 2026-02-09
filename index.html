@@ -8,51 +8,33 @@
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Times New Roman', serif; background: #050505; color: #ffffff; line-height: 1.8; }
-        
-        /* Navigation */
         nav { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.95); z-index: 1000; padding: 12px 0; border-bottom: 2px solid #FFD700; }
         .nav-container { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
         .brand { display: flex; align-items: center; gap: 15px; text-decoration: none; }
-        .logo-img { height: 45px; width: auto; display: block; }
+        .logo-img { height: 45px; width: auto; }
         .brand-name { color:#FFD700; font-weight:900; letter-spacing:2px; font-size: 1.3rem; text-transform: uppercase; }
-        .nav-links a { color: #fff; text-decoration: none; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; margin-left: 20px; letter-spacing: 1px; }
-
-        /* Hero */
-        .hero { 
-            height: 40vh; 
-            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('images/images/refinery.jpg') center/cover no-repeat;
-            display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 60px;
-        }
+        .nav-links a { color: #fff; text-decoration: none; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; margin-left: 20px; }
+        .hero { height: 40vh; background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('images/images/refinery.jpg') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 60px; }
         .straight-name { font-size: 2.8rem; color: #FFD700; letter-spacing: 5px; font-weight: 900; text-transform: uppercase; border-bottom: 3px solid #FFD700; padding: 10px 30px; }
-
-        /* Content Sections */
         .section-padding { padding: 80px 20px; max-width: 1100px; margin: auto; }
-        .section-title { color: #FFD700; font-size: 2.2rem; margin-bottom: 30px; text-transform: uppercase; text-align: center; }
         .profile-text { font-size: 1.15rem; color: #ddd; text-align: justify; margin-bottom: 25px; border-left: 3px solid #FFD700; padding-left: 25px; }
-
         .ops-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; margin-top: 40px; }
         .ops-card { background: #0d1117; border: 1px solid #30363d; border-radius: 4px; overflow: hidden; }
         .ops-card img { width: 100%; height: 260px; object-fit: cover; border-bottom: 2px solid #FFD700; }
         .ops-content { padding: 30px; }
         .ops-content h3 { color: #FFD700; margin-bottom: 15px; font-size: 1.5rem; }
-
-        /* Contact Section */
         .contact-section { background: #0d1117; padding: 100px 20px; border-top: 1px solid #FFD700; }
         .contact-box { max-width: 600px; margin: auto; background: #161b22; padding: 40px; border-radius: 8px; border: 1px solid #444; }
         .contact-box h2 { text-align: center; color: #FFD700; margin-bottom: 30px; text-transform: uppercase; }
         input, textarea { width: 100%; padding: 15px; margin-bottom: 20px; background: #f9f9f9; border: none; color: #000; border-radius: 4px; font-size: 1rem; }
         .btn { width: 100%; padding: 18px; background: #FFD700; color: #000; border: none; font-weight: bold; cursor: pointer; text-transform: uppercase; font-size: 1.1rem; }
-
-        /* Footer */
         footer { background: #000; padding: 80px 20px; border-top: 1px solid #333; }
         .footer-grid { max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; }
         .footer-col h4 { color: #FFD700; margin-bottom: 20px; text-transform: uppercase; font-size: 0.95rem; }
         .footer-col p { color: #888; font-size: 0.85rem; }
         .email-link { color: #FFD700; text-decoration: none; font-weight: bold; }
-
         .legal-notice { background: #050505; padding: 30px; text-align: center; border-top: 1px solid #111; font-size: 0.75rem; color: #444; }
-
-        @media (max-width: 600px) { .straight-name { font-size: 1.5rem; } .logo-img { height: 35px; } .brand-name { font-size: 1rem; } }
+        @media (max-width: 600px) { .straight-name { font-size: 1.5rem; } }
     </style>
 </head>
 <body>
@@ -84,24 +66,15 @@
         <div class="ops-grid">
             <div class="ops-card">
                 <img src="images/images/refinery.jpg" alt="Refinery">
-                <div class="ops-content">
-                    <h3>Refining</h3>
-                    <p>Advanced fractional distillation producing high-performance fuels.</p>
-                </div>
+                <div class="ops-content"><h3>Strategic Refining</h3><p>Meeting global purity standards through advanced distillation.</p></div>
             </div>
             <div class="ops-card">
                 <img src="images/images/oil-tanker.jpg" alt="Logistics">
-                <div class="ops-content">
-                    <h3>Logistics</h3>
-                    <p>Global tanker fleet and pipeline management with 24/7 oversight.</p>
-                </div>
+                <div class="ops-content"><h3>Supply Chain</h3><p>World-class logistics and tanker fleet operations.</p></div>
             </div>
             <div class="ops-card">
                 <img src="images/images/trading-floor.jpg" alt="Trading">
-                <div class="ops-content">
-                    <h3>Market Strategy</h3>
-                    <p>Comprehensive risk management in global energy commodity trading.</p>
-                </div>
+                <div class="ops-content"><h3>Energy Trading</h3><p>Navigating global markets with real-time intelligence.</p></div>
             </div>
         </div>
     </section>
@@ -126,14 +99,11 @@
         <div class="footer-grid">
             <div class="footer-col">
                 <h4>World Headquarters</h4>
-                <p>Apex Oil Company, Inc.<br>
-                8235 Forsyth Blvd, Suite 900<br>
-                St. Louis, MO 63105</p>
+                <p>Apex Oil Company, Inc.<br>8235 Forsyth Blvd, Suite 900<br>St. Louis, MO 63105</p>
             </div>
             <div class="footer-col">
                 <h4>Compliance</h4>
-                <p>• ISO 9001:2026 Certified</p>
-                <p>• API Industry Authorized</p>
+                <p>• ISO 9001 Certified<br>• API Industry Authorized</p>
             </div>
             <div class="footer-col">
                 <h4>Official Contact</h4>
@@ -143,7 +113,7 @@
     </footer>
 
     <div class="legal-notice">
-        <p>&copy; 1932-2026 Apex Oil Company Inc. All Rights Reserved.</p>
+        <p>&copy; 1932-2026 Apex Oil Company Inc. | All Rights Reserved.</p>
     </div>
 
 </body>
