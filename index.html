@@ -3,60 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apex Oil Company Inc. | Global Energy & Wholesale Distribution</title>
+    <title>Apex Oil Company Inc. | Global Authority</title>
+    <link rel="icon" type="image/png" href="images/images/logo.png">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: 'Times New Roman', serif; background: #050505; color: #ffffff; line-height: 1.8; }
         
-        /* Navigation */
-        nav { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.95); z-index: 1000; padding: 15px 0; border-bottom: 2px solid #FFD700; }
+        /* Navigation: Clean and Transparent */
+        nav { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.95); z-index: 1000; padding: 10px 0; border-bottom: 2px solid #FFD700; }
         .nav-container { max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        
+        /* The Branding Section: Logo + Text */
+        .brand { display: flex; align-items: center; gap: 15px; text-decoration: none; }
+        .logo-img { height: 50px; width: auto; display: block; filter: brightness(1.2); }
+        .brand-name { color: #FFD700; font-weight: 900; letter-spacing: 2px; font-size: 1.4rem; text-transform: uppercase; }
+
         .nav-links a { color: #fff; text-decoration: none; font-size: 0.85rem; font-weight: bold; text-transform: uppercase; margin-left: 20px; letter-spacing: 1px; }
 
-        /* Hero - The Straight Name Anchor */
+        /* The Hero - Single Straight Name */
         .hero { 
-            height: 40vh; 
-            background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('images/images/refinery.jpg') center/cover no-repeat;
-            display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 55px;
+            height: 45vh; 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/images/refinery.jpg') center/cover no-repeat;
+            display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 60px;
         }
-        .straight-name { font-size: 2.8rem; color: #FFD700; letter-spacing: 5px; font-weight: 900; text-transform: uppercase; border-bottom: 3px solid #FFD700; padding: 10px 30px; }
+        .straight-name { font-size: 3rem; color: #FFD700; letter-spacing: 4px; font-weight: 900; text-transform: uppercase; border-bottom: 3px solid #FFD700; padding: 10px 20px; }
 
-        /* Corporate Profile Section */
         .section-padding { padding: 80px 20px; max-width: 1100px; margin: auto; }
-        .section-title { color: #FFD700; font-size: 2.2rem; margin-bottom: 30px; text-transform: uppercase; text-align: center; }
-        .profile-text { font-size: 1.15rem; color: #ddd; text-align: justify; margin-bottom: 25px; border-left: 3px solid #FFD700; padding-left: 25px; }
+        .profile-text { font-size: 1.2rem; color: #ccc; text-align: justify; border-left: 4px solid #FFD700; padding-left: 25px; margin-bottom: 25px; }
 
-        /* Operations Grid */
-        .ops-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; margin-top: 40px; }
-        .ops-card { background: #0d1117; border: 1px solid #30363d; border-radius: 4px; overflow: hidden; }
+        .ops-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; margin-top: 50px; }
+        .ops-card { background: #0a0a0a; border: 1px solid #222; border-radius: 4px; overflow: hidden; }
         .ops-card img { width: 100%; height: 260px; object-fit: cover; border-bottom: 2px solid #FFD700; }
         .ops-content { padding: 30px; }
-        .ops-content h3 { color: #FFD700; margin-bottom: 15px; font-size: 1.5rem; }
-        .ops-content p { color: #bbb; font-size: 0.95rem; }
+        .ops-content h3 { color: #FFD700; font-size: 1.5rem; margin-bottom: 15px; text-transform: uppercase; }
 
-        /* Corporate Contact */
-        .contact-bg { background: #0a0a0a; padding: 100px 20px; border-top: 1px solid #333; }
-        .contact-box { max-width: 600px; margin: auto; background: #161b22; padding: 40px; border-radius: 8px; border: 1px solid #FFD700; }
-        input, textarea { width: 100%; padding: 15px; margin-bottom: 20px; background: #f5f5f5; border: none; color: #000; border-radius: 4px; font-size: 1rem; }
+        .contact-box { max-width: 600px; margin: auto; background: #111; padding: 40px; border-radius: 10px; border: 1px solid #FFD700; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        input, textarea { width: 100%; padding: 15px; margin-bottom: 15px; background: #222; border: 1px solid #444; color: white; border-radius: 4px; }
         .btn { width: 100%; padding: 18px; background: #FFD700; color: #000; border: none; font-weight: bold; cursor: pointer; text-transform: uppercase; font-size: 1.1rem; }
 
-        /* Legal & Compliance Footer */
-        footer { background: #000; padding: 80px 20px; border-top: 1px solid #333; }
-        .footer-grid { max-width: 1200px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 50px; }
-        .footer-col h4 { color: #FFD700; margin-bottom: 25px; text-transform: uppercase; font-size: 0.95rem; letter-spacing: 2px; }
-        .footer-col p, .footer-col li { color: #888; font-size: 0.85rem; margin-bottom: 12px; list-style: none; }
-        .email-link { color: #FFD700; text-decoration: none; font-weight: bold; }
+        footer { background: #000; padding: 80px 20px; border-top: 1px solid #222; }
+        .footer-grid { max-width: 1100px; margin: auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+        .footer-col h4 { color: #FFD700; margin-bottom: 20px; text-transform: uppercase; font-size: 0.9rem; }
+        .footer-col p { color: #777; font-size: 0.85rem; line-height: 1.6; }
+        .email-link { color: #FFD700; text-decoration: none; font-weight: bold; font-size: 1.1rem; }
 
-        .legal-notice { background: #050505; padding: 30px; text-align: center; border-top: 1px solid #111; font-size: 0.75rem; color: #444; }
-
-        @media (max-width: 600px) { .straight-name { font-size: 1.5rem; } }
+        @media (max-width: 600px) { .straight-name { font-size: 1.6rem; } .brand-name { font-size: 1.1rem; } .logo-img { height: 35px; } }
     </style>
 </head>
 <body>
 
     <nav>
         <div class="nav-container">
-            <div style="color:#FFD700; font-weight:bold; letter-spacing:2px;">APEX OIL</div>
+            <a href="#" class="brand">
+                <img src="images/images/logo.png" alt="Apex Oil Logo" class="logo-img">
+                <div class="brand-name">Apex Oil</div>
+            </a>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#ops">Operations</a>
@@ -70,46 +71,44 @@
     </header>
 
     <section id="about" class="section-padding">
-        <h2 class="section-title">Corporate Profile</h2>
-        <p class="profile-text">Founded in 1932, Apex Oil Company, Inc. has spent nearly a century at the forefront of the global energy landscape. As a premier wholesale distributor, we operate a sophisticated network dedicated to the storage, transport, and distribution of high-grade petroleum products including asphalt, diesel, and gasoline.</p>
-        <p class="profile-text">Based in St. Louis, Missouri, our operations are built on a foundation of logistical precision and market expertise. We bridge the gap between production and demand, ensuring a reliable supply of essential energy resources to industrial and municipal partners worldwide.</p>
+        <h2 style="text-align:center; color:#FFD700; margin-bottom:40px; text-transform:uppercase;">Corporate Legacy</h2>
+        <p class="profile-text">Founded in 1932, Apex Oil Company, Inc. has established nearly a century of dominance in the global energy markets. Headquartered in St. Louis, Missouri at 8235 Forsyth Blvd, Suite 900, we specialize in the wholesale distribution, storage, and transport of critical petroleum products including asphalt, diesel, and gasoline.</p>
+        <p class="profile-text">Our logistics network spans five continents, ensuring seamless energy supply chains through a commitment to operational excellence and market stability. We are more than a distributor; we are a global partner in energy security.</p>
     </section>
 
     <section id="ops" class="section-padding" style="background: #0a0a0a;">
-        <h2 class="section-title">Global Operations</h2>
         <div class="ops-grid">
             <div class="ops-card">
                 <img src="images/images/refinery.jpg" alt="Refinery">
                 <div class="ops-content">
-                    <h3>Refining & Production</h3>
-                    <p>We leverage advanced refining technologies to deliver high-octane fuels and specialized distillates, ensuring adherence to the most stringent international quality and environmental standards.</p>
+                    <h3>Strategic Refining</h3>
+                    <p>Our refining partnerships utilize high-complexity distillation to produce low-sulfur fuels that meet the highest international environmental standards.</p>
                 </div>
             </div>
             <div class="ops-card">
                 <img src="images/images/oil-tanker.jpg" alt="Logistics">
                 <div class="ops-content">
-                    <h3>Supply Chain Logistics</h3>
-                    <p>Through our marine fleet and extensive pipeline access, Apex Oil manages complex international distribution routes, maintaining an impeccable record of supply chain reliability.</p>
+                    <h3>Global Supply Chain</h3>
+                    <p>Utilizing a dedicated fleet of tankers and pipeline infrastructure, we maintain a 99.9% reliability rate in the transport of petroleum assets worldwide.</p>
                 </div>
             </div>
             <div class="ops-card">
                 <img src="images/images/trading-floor.jpg" alt="Trading">
                 <div class="ops-content">
-                    <h3>Energy Commodity Trading</h3>
-                    <p>Our trading operations provide critical market liquidity and price risk management, utilizing real-time analytics to navigate the volatility of global energy markets.</p>
+                    <h3>Market Intelligence</h3>
+                    <p>Our 24/7 trading desk provides price stability and risk management for wholesale partners, navigating the complexities of the global energy markets.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact-bg">
+    <section id="contact" style="background: #0d1117; padding: 100px 20px;">
         <div class="contact-box">
-            <h2 style="text-align:center; color:#FFD700; margin-bottom:30px;">Corporate Inquiry</h2>
+            <h2 style="text-align:center; color:#FFD700; margin-bottom:30px; text-transform:uppercase;">Corporate Inquiry</h2>
             <form action="https://formsubmit.co/shekinahpriest@gmail.com" method="POST">
-                <input type="text" name="name" placeholder="Full Name / Corporate Entity" required>
-                <input type="email" name="email" placeholder="Professional Email Address" required>
-                <textarea name="message" rows="5" placeholder="Nature of Inquiry (Supply, Trading, or Logistics)..." required></textarea>
-                <input type="hidden" name="_next" value="https://apexoil.github.io">
+                <input type="text" name="name" placeholder="Full Name / Company Name" required>
+                <input type="email" name="email" placeholder="Corporate Email Address" required>
+                <textarea name="message" rows="5" placeholder="Detailed Inquiry Details..." required></textarea>
                 <button type="submit" class="btn">Send Secure Message</button>
             </form>
         </div>
@@ -126,25 +125,18 @@
             </div>
             <div class="footer-col">
                 <h4>Compliance & Policy</h4>
-                <ul>
-                    <li>• ISO 9001:2026 Certified</li>
-                    <li>• API Industry Standards</li>
-                    <li>• Environmental Safety Policy</li>
-                    <li>• GDPR & Data Privacy</li>
-                </ul>
+                <p>• ISO 14001:2026 Environmental</p>
+                <p>• API Industry Authorized</p>
+                <p>• GDPR Data Protection Compliant</p>
             </div>
             <div class="footer-col">
-                <h4>Legal & Contact</h4>
-                <p>Electronic Mail:</p>
+                <h4>Communication</h4>
+                <p>Official Inquiry Channel:</p>
                 <a href="mailto:shekinahpriest@gmail.com" class="email-link">shekinahpriest@gmail.com</a>
-                <p style="margin-top:20px;">Main Terminal Operations: 24/7</p>
             </div>
         </div>
+        <p style="text-align:center; color:#444; font-size:0.75rem; margin-top:50px;">&copy; 1932-2026 Apex Oil Company Inc. All Rights Reserved.</p>
     </footer>
-
-    <div class="legal-notice">
-        <p>&copy; 1932-2026 Apex Oil Company, Inc. All Rights Reserved. This site is for wholesale and corporate information only.</p>
-    </div>
 
 </body>
 </html>
